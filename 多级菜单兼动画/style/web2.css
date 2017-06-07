@@ -1,0 +1,14 @@
+*{padding: 0;margin: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+.nav{height: 40px;width: 100%;background: #222;margin-top: 100px;}
+.nav .list{width: 1000px;height: 40px;margin: 0 auto;}
+.list li{float: left;position: relative;}
+/*.list li>a这选择器的作用是：li下的对应子级元素起作用，孙级元素不起作用*/
+.list li>a{padding: 0 30px;line-height: 40px;display: block;color: #aaa;font-size: 16px;}
+/*利用定位属性，让父级菜单不受子级菜单的宽度影响，脱离文档流*/
+.list li .down{width: 150px;background: #333;position: absolute;left: 0;top: 40px;display: none;}
+.list li .down a{display: block;line-height: 30px;color: #aaa;padding: 0 30px;}
+
+.list li:hover>a{background: #333;color: #fff;}
+.list li .down a:hover{color: #fff;}

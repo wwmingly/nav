@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>垂直菜单</title>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	ul,li{list-style: none;}
+	a{text-decoration: none;}
+	.head:first-child{
+		margin-top: 50px;
+	}
+	.head{
+		background: #eee
+	}
+	.main{
+		background: url(nav_back.png);
+		background-repeat: no-repeat;
+		width: 220px;
+		margin-top: -2px;
+	}
+	.main a{
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+	}
+	.main>a{
+		line-height: 41px; 
+		color: #fff; 
+		background: url(sanjiaoyou.png);
+		background-size:10px ;
+		background-repeat: no-repeat;
+		background-position: 30px center;
+	}
+	.main li a{
+		background: url(child_chioce.png);
+		background-size:6px ;
+		background-repeat: no-repeat;
+		background-position: 30px center;
+		/*background: #eee;*/
+	}
+	.main li a{
+		
+		line-height: 30px;
+		color: #000;
+	}
+	/*.active{
+		background-image: url(chioce.png);
+		background-repeat: no-repeat;
+		height: 30px;
+		width: 220px;
+	}*/
+.main ul{
+	display: none;
+}
+	</style>
+</head>
+<body>
+	<ul class="head">
+		<li class="main">
+			<a href="#">菜单1</a>
+			<ul>
+				<li><a href="#">子菜单1</a></li>
+			</ul>
+		</li>
+		<li class="main">
+			<a href="#">菜单2</a>
+			<ul>
+				<li><a href="#">子菜单1</a></li>
+				<li><a href="#">子菜单2</a></li>
+				<li><a href="#">子菜单3</a></li>
+			</ul>
+		</li>
+		<li class="main">
+			<a href="#">菜单3</a>
+			<ul>
+				<li><a href="#">子菜单1</a></li>
+				<li><a href="#">子菜单2</a></li>
+			</ul>
+		</li>
+	</ul>
+    <div class="text"></div>
+</body>
+
+</html>
